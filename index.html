@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script defer src="book.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Library</h2>
+    <div id="book-list">
+    </div>
+
+    <!--     <button class="newBookButton">Add new book</button> -->
+
+    <div class="form-wrapper">
+      <form id="add-book-form" class="add-books" method="">
+        <label for="title">Title <br><input type="text" name="bookTitle" id="title" required /><br />
+        </label>
+
+        <label for="author">Author <br><input type="text" name="bookAuthor" id="author" required /><br />
+        </label>
+
+        <label for="pages">Pages number <br><input type="text" name="bookPages" id="pages" required /><br />
+        </label>
+
+        <div id="checkBox">
+          <p><label>Read: </label><input type="checkbox" id="read" name="readChoise" value="true" class="css-checkbox">
+          </p>
+        </div>
+
+        <input type="submit" value="NEW BOOK" id="new-book-button" class="newBookButton" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
